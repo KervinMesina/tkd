@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
           wrapper = document.getElementById('pageWrapper'),
           nav = document.getElementById('mainNav');
 
-    // --- Simple Login (User: carmella | PW: tkdgear) ---
+    // --- Simple Login (User: carmela | PW: tkdgear) ---
     loginForm.onsubmit = (e) => {
         e.preventDefault();
         const u = document.getElementById('user').value;
         const p = document.getElementById('pass').value;
-        if (u === "carmella" && p === "tkdgear") {
+        if (u === "carmela" && p === "tkdgear") {
             loginOverlay.style.display = "none";
             wrapper.style.display = "block";
             nav.style.display = "flex";
