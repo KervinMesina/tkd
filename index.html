@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKD Martial Gear | Promotion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="main-nav" id="mainNav" style="display:none;">
+        <div class="nav-left">
+            <img src="logo.jpg" alt="Logo" class="nav-logo">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-tool">🛒 Cart (0)</a>
+            <a href="#" class="nav-tool" id="logoutBtn">Logout</a>
+        </div>
+    </nav>
+
+    <div id="pageWrapper" style="display:none;">
+        <div class="promo-banner-top">
+            <h2>☀️ Summer Promo Sale! 70% OFF ON ALL ITEMS! ☀️</h2>
+        </div>
+
+        <header id="home" class="hero">
+            <h1>UNLEASH YOUR POWER</h1>
+            <p>Premium martial arts gear for the dedicated athlete.</p>
+            <button class="cta-btn" onclick="document.getElementById('shop').scrollIntoView()">View Shop</button>
+        </header>
+
+        <section class="about-simple">
+            <div class="container">
+                <h2>Your Journey to Mastery Starts Here</h2>
+                <p>At <strong>Taekwondo Martial Gear</strong>, we provide the armor for your journey. Join elite athletes who trust us for comfort, style, and protection.</p>
+            </div>
+        </section>
+
+        <section id="shop" class="gray-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Gear Shop</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="dobok">Doboks</button>
+                        <button class="filter-btn" data-filter="protective">Gear</button>
+                        <button class="filter-btn" data-filter="belt">Belts</button>
+                    </div>
+                </div>
+                
+            <div class="product-grid">
+                <div class="p-card dobok">
+                    <img src="products/dobok1.jpg" class="p-img">
+                    <h4>White Dobok</h4>
+                    <p>₱2,300</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="p-card dobok">
+                    <img src="products/dobok2.jpg" class="p-img">
+                    <h4>Blue Dobok</h4>
+                    <p>₱2,500</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="p-card dobok">
+                    <img src="products/dobok3.jpg" class="p-img">
+                    <h4>Black Dobok</h4>
+                    <p>₱3,500</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="p-card protective">
+                    <img src="products/pads.jpg" class="p-img">
+                    <h4>Sparring Pads</h4>
+                    <p>₱1,800</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="p-card protective">
+                    <img src="products/headguard.jpg" class="p-img">
+                    <h4>Head Guard</h4>
+                    <p>₱1,250</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="p-card protective">
+                    <img src="products/body.jpg" class="p-img">
+                    <h4>Body Armor</h4>
+                    <p>₱1,500</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="p-card belt">
+                    <img src="products/belt1.jpg" class="p-img">
+                    <h4>Black Belt</h4>
+                    <p>₱850</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="p-card belt">
+                    <img src="products/belt2.jpg" class="p-img">
+                    <h4>Red Belt</h4>
+                    <p>₱650</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="p-card belt">
+                    <img src="products/belt3.jpg" class="p-img">
+                    <h4>Yellow Belt</h4>
+                    <p>₱550</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="contact" class="white-bg">
+            <div class="container">
+                <h2>Contact Info</h2>
+                <p>📞 <strong>Phone:</strong> +63 912 345 6789</p>
+                <p>📍 <strong>Location:</strong> Magalang, Pampanga</p>
+                <p>🔵 <strong>Facebook:</strong> Taekwondo Martial Gear Official</p>
+            </div>
+        </section>
+
+        <footer><p>&copy; 2026 Taekwondo Martial Gear.</p></footer>
+    </div>
+
+    <div id="loginOverlay" class="overlay">
+        <div class="login-modal">
+            <img src="logo.jpg" class="floating-logo">
+            <h1>TKD GEAR LOGIN</h1>
+            <form id="loginForm">
+                <input type="text" id="user" placeholder="Username" required>
+                <input type="password" id="pass" placeholder="Password" required>
+                <button type="submit" class="login-btn">ENTER</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
