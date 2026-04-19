@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
           wrapper = document.getElementById('pageWrapper'),
           nav = document.getElementById('mainNav');
 
+    // --- Simple Login (User: carmella | PW: tkdgear) ---
     loginForm.onsubmit = (e) => {
         e.preventDefault();
         const u = document.getElementById('user').value;
@@ -17,18 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // --- Simple Logout ---
     document.getElementById('logoutBtn').onclick = () => location.reload();
-
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const productCards = document.querySelectorAll('.p-card');
-    filterButtons.forEach(btn => {
-        btn.onclick = () => {
-            filterButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const cat = btn.dataset.filter;
-            productCards.forEach(card => {
-                card.style.display = (cat === 'all' || card.classList.contains(cat)) ? "block" : "none";
-            });
-        };
-    });
 });
